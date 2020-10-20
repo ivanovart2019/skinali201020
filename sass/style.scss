@@ -1,3 +1,10 @@
-* {
-  box-sizing: border-box;
-}
+﻿  @charset "UTF-8";
+//настройка шрифтов 
+  @import 'fonts';
+  @import 'colors/colors';
+//базовая настройка сетки 
+  @import 'grid';
+//настройки интерфейса
+  @import 'interface';
+//шапка сайта
+  @import 'blocks/navbar2' ;
