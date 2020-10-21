@@ -1,10 +1,14 @@
-﻿  @charset "UTF-8";
-//настройка шрифтов 
-  @import 'fonts';
-  @import 'colors/colors';
-//базовая настройка сетки 
-  @import 'grid';
-//настройки интерфейса
-  @import 'interface';
+﻿@charset "UTF-8";
+
+//базовая настройка сетки
+@import "grid";
+
 //шапка сайта
-  @import 'blocks/navbar2' ;
+@import "blocks/navbar";
+
+//настройка шрифтов
+@import "fonts";
+@import "colors/colors";
+
+//настройки интерфейса
+@import "interface";
