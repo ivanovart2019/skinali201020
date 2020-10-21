@@ -16,7 +16,7 @@
   &_phone {
     display: block;
     font-size: 19px;
-    @include  bold;
+    @include bold;
     text-decoration: none;
     color: #1c1c1c;
   }
@@ -45,7 +45,7 @@
   .logo {
     &_text {
       display: block;
-      font-size: 18px;
+      font-size: 19px;
       text-transform: uppercase;
       @include bold;
     }
