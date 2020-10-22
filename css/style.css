@@ -8,6 +8,28 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .hero {
+    max-width: 100%;
+  }
+}
+
 @font-face {
   font-family: "Proxima Nova Regular";
   src: url("../fonts/ProximaNova-Regular.eot");
@@ -58,6 +80,12 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+  .navbar_button {
+    font-size: 10px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -66,6 +94,28 @@ body {
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .hero {
+    max-width: 100%;
+  }
 }
 
 .menu {
@@ -187,6 +237,19 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b7b;
+}
+
+@media (max-width: 991px) {
+  .navbar_mobile, .navbar_lendline, .navbar_phone,
+  .navbar .navbar_smail-text {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
 }
 
 .hero {

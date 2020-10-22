@@ -92,3 +92,18 @@
     }
   }
 }
+@media (max-width: 991px) {
+  .navbar {
+    &_mobile,
+    &_lendline,
+    &_phone,
+    .navbar_smail-text {
+      display: none;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}
