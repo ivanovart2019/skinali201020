@@ -6,22 +6,21 @@
     min-height: 80px;
     //border: 1px solid red;
   }
-  &_menu-button {
-    margin-right: 30px;
-  }
+
   &_mobile,
   &_landline {
     text-align: right;
   }
   &_phone {
     display: block;
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 5px;
     @include bold;
     text-decoration: none;
     color: $text-color;
   }
   .navbar_smail-text {
+    display: block;
     font-size: 14px;
     color: $text-color-light;
     text-decoration: none;
@@ -51,7 +50,8 @@
   .logo {
     &_text {
       display: block;
-      font-size: 19px;
+      margin-bottom: 5px;
+      font-size: 20px;
       text-transform: uppercase;
       @include bold;
     }

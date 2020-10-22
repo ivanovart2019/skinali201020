@@ -43,6 +43,18 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Proxima Nova Semibold", sans-serif;
+  border-radius: 5px;
+  color: #507fe1;
+}
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #507fe1;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 30px;
 }
 
 * {
@@ -68,17 +80,13 @@ body {
   min-height: 80px;
 }
 
-.navbar_menu-button {
-  margin-right: 30px;
-}
-
 .navbar_mobile, .navbar_landline {
   text-align: right;
 }
 
 .navbar_phone {
   display: block;
-  font-size: 19px;
+  font-size: 18px;
   margin-bottom: 5px;
   font-family: "Proxima Nova Semibold", sans-serif;
   text-decoration: none;
@@ -86,6 +94,7 @@ body {
 }
 
 .navbar .navbar_smail-text {
+  display: block;
   font-size: 14px;
   color: #7b7b7b;
   text-decoration: none;
@@ -123,7 +132,8 @@ body {
 
 .navbar .logo_text {
   display: block;
-  font-size: 19px;
+  margin-bottom: 5px;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
@@ -132,5 +142,22 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b7b;
+}
+
+.hero {
+  background: #f1f1f1 url(../img/hero_bg.png) no-repeat center right;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.hero_title {
+  margin-bottom: 40px;
+}
+
+.hero_subtitle {
+  display: block;
+  margin-bottom: 70px;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
