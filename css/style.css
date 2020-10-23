@@ -84,8 +84,8 @@ body {
 }
 
 .menu {
-  z-index: -99;
   position: fixed;
+  z-index: -1;
   top: 80px;
   left: 0;
   width: 100%;
@@ -93,8 +93,8 @@ body {
   background-color: #507fe1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .menu_active {
@@ -152,6 +152,7 @@ body {
 
 .navbar {
   position: fixed;
+  z-index: 99;
   width: 100%;
   top: 0;
   left: 0;
