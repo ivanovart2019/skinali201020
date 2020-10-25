@@ -95,18 +95,33 @@
     }
   }
 }
+
+// aptive
 @media (max-width: 992px) {
   .navbar {
     &_mobile,
-    &_lendline,
-    &_phone,
-    .navbar_smail-text {
+    &_landline {
       display: none;
     }
   }
 }
-@media (max-width: 600px) {
-  .logo {
-    display: none;
+@media (max-width: 660px) {
+  .navbar {
+    &_logo {
+      display: none;
+    }
+  }
+  .menu {
+    top: 60px;
+    //transform: translateY(0);
+    &-button {
+      height: 60px;
+    }
+    &_nav {
+      flex-direction: column;
+    }
+    &_link {
+      margin-bottom: 1em;
+    }
   }
 }
