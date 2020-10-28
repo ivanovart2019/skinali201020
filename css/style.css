@@ -76,6 +76,11 @@ body {
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
+  margin-top: 80px;
+}
+
+.bg-secondary {
+  background: #ddf;
 }
 
 @media (max-width: 600px) {
@@ -242,12 +247,13 @@ body {
 .hero {
   display: block;
   background: #f1f1f1 url(../img/hero2_bg.png) no-repeat center top 80px;
-  background-size: contain;
+  background-size: 100%;
   padding-top: 120px;
-  padding-bottom: 270px;
+  padding-bottom: 200px;
 }
 
 .hero_title {
+  display: block;
   font-size: 1.5em;
   margin: 40px 0 40px 0;
 }
@@ -256,7 +262,6 @@ body {
   display: block;
   font-size: 1.2em;
   font-family: "Proxima Nova Semibold", sans-serif;
-  margin-bottom: 60px;
 }
 
 @media (max-width: 640px) {
@@ -270,5 +275,10 @@ body {
     font-family: "Proxima Nova Semibold", sans-serif;
     margin-bottom: 42px;
   }
+}
+
+.offer-block {
+  background-color: #fff;
+  margin: 1em;
 }
 /*# sourceMappingURL=style.css.map */

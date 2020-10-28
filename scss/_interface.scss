@@ -23,6 +23,11 @@
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
+  margin-top: 80px;
+}
+
+.bg-secondary {
+  background: $bg-secondary;
 }
 
 @media (max-width: 600px) {
