@@ -80,7 +80,7 @@ body {
 }
 
 .bg-secondary {
-  background: #ddf;
+  background: #eee;
 }
 
 @media (max-width: 600px) {
@@ -279,6 +279,7 @@ body {
 
 .offer-block {
   background-color: #fff;
-  margin: 1em;
+  margin: 0;
+  padding: 1em;
 }
 /*# sourceMappingURL=style.css.map */
