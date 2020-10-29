@@ -29,13 +29,18 @@
 .bg-secondary {
   background: $bg-secondary;
 }
+.input {
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #ddd;
+}
 
 @media (max-width: 600px) {
   .navbar_button {
     font-size: 0.7em;
     padding: 3% 5%;
   }
-  .button {
+  .offer.button {
     font-size: 0.7em;
     padding: 3% 4%;
   }
