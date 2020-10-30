@@ -284,6 +284,7 @@ body {
 }
 
 .offer {
+  display: block;
   padding: 100px 0;
 }
 
@@ -309,9 +310,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -321,6 +319,7 @@ body {
 .offer .form_label {
   display: block;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .offer .form_group {
@@ -330,10 +329,10 @@ body {
 
 .offer .form_input {
   width: 100%;
-  border-right-width: 0px;
+  border-right: 0;
 }
 
 .offer .form_input:last-child {
-  border-right-width: 1px;
+  border-right: 1px solid #ddd;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 .offer {
+  display: block;
   padding: 100px 0;
   &-block {
     background-color: #fff;
@@ -18,7 +19,7 @@
   .form {
     &_row {
       display: flex;
-      justify-content: space-between;
+      //justify-content: space-between;
       align-items: center;
       max-width: 900px;
     }
@@ -32,9 +33,9 @@
     }
     &_input {
       width: 100%;
-      border-right: 0px;
+      border-right: 0;
       &:last-child {
-        border-right: 1px;
+        border-right: 1px solid #ddd;
       }
     }
   }
