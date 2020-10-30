@@ -45,6 +45,9 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     margin-right: 40px;
+    &:hover {
+      cursor: pointer;
+    }
     &:before {
       content: "";
       width: 30px;

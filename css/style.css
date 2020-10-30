@@ -4,13 +4,13 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: auto;
 }
 
 @media (max-width: 1199px) {
   .container {
-    max-width: 960px;
+    max-width: 860px;
   }
 }
 
@@ -93,7 +93,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label:before {
-  background: green;
+  background-color: #507fe1;
 }
 
 .checkbox-label {
@@ -104,6 +104,10 @@ input[type="checkbox"]:checked + label:before {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 40px;
+}
+
+.checkbox-label:hover {
+  cursor: pointer;
 }
 
 .checkbox-label:before {
@@ -311,12 +315,17 @@ input[type="checkbox"]:checked + label:before {
 
 .offer {
   display: block;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .offer-block {
-  background-color: #fff;
-  padding: 80px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  background: #fff url(../img/fu-1.png) no-repeat right bottom;
+  background-size: 41%;
+  padding: 48px;
+  margin-top: -200px;
+  width: 90%;
 }
 
 .offer_title {
