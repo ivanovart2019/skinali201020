@@ -56,6 +56,21 @@ body {
   color: #262626;
 }
 
+.section {
+  padding: 100px 0 60px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section_title {
+  margin-bottom: 70px;
+}
+
 .button-o {
   border: 2px solid #507fe1;
   padding: 1.2% 2%;
@@ -133,6 +148,13 @@ input[type="checkbox"]:checked + label:before {
   .offer.button {
     font-size: 0.7em;
     padding: 3% 4%;
+  }
+  .section {
+    padding: 30px 0;
+  }
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -426,6 +448,39 @@ input[type="checkbox"]:checked + label:before {
   }
   .form_input {
     margin-bottom: 20px;
+  }
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features-block_item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 991px) {
+  .features-block_item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-block_item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
