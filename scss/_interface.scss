@@ -36,6 +36,22 @@
   font-weight: bold;
   border-radius: 5px;
   //margin-top: 80px;
+  &-fitting {
+    padding: 10px;
+    text-transform: uppercase;
+    color: $primary;
+    background-color: #fff;
+    border: none;
+    font-size: 11px;
+  }
+  &-add {
+    background: lighten($primary, 30%);
+    padding: 10px;
+    color: #333;
+    font-size: 11px;
+    border: none;
+    text-transform: uppercase;
+  }
 }
 
 .bg-secondary {

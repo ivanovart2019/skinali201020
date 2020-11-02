@@ -93,6 +93,24 @@ body {
   border-radius: 5px;
 }
 
+.button-fitting {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #507fe1;
+  background-color: #fff;
+  border: none;
+  font-size: 11px;
+}
+
+.button-add {
+  background: #d3dff7;
+  padding: 10px;
+  color: #333;
+  font-size: 11px;
+  border: none;
+  text-transform: uppercase;
+}
+
 .bg-secondary {
   background: #eee;
 }
@@ -480,7 +498,31 @@ input[type="checkbox"]:checked + label:before {
   .features-block_item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  width: 570px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+}
+
+.catalog-card_button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

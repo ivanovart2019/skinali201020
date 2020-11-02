@@ -1,0 +1,17 @@
+.catalog {
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-card {
+    width: 570px;
+    flex-basis: 50%;
+    position: relative;
+    &_button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
