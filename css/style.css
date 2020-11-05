@@ -590,4 +590,75 @@ input[type="checkbox"]:checked + label:before {
     max-width: 470px;
   }
 }
+
+.catalog {
+  background-color: #f2f2f2;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 7px 21px rgba(0, 0, 0, 0.2);
+          box-shadow: 7px 7px 21px rgba(0, 0, 0, 0.2);
+  margin: 1em 0.4em;
+}
+
+.catalog-card_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.catalog-card_teg {
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  background-color: #507fe1;
+  padding: 8px 14px;
+  color: #ddd;
+  font-size: 1em;
+}
+
+.catalog-card_image {
+  display: block;
+}
+
+.catalog-link {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.catalog_link-more {
+  display: inline-block;
+}
+
+.catalog_description {
+  display: block;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1190px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
