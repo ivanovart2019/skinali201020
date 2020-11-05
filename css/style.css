@@ -58,6 +58,8 @@ body {
 
 .section {
   padding: 100px 0 60px 0;
+  border: 1px solid red;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .section-title {
@@ -65,6 +67,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .section_title {
@@ -97,16 +100,16 @@ body {
   padding: 10px;
   background-color: #fff;
   color: #507fe1;
-  font-size: 11px;
+  font-size: 10px;
   border: none;
   text-transform: uppercase;
 }
 
 .button-add {
   padding: 10px;
-  background: #7c9fe8;
+  background: #91afec;
   color: #fff;
-  font-size: 11px;
+  font-size: 10px;
   border: none;
   text-transform: uppercase;
 }
@@ -116,7 +119,7 @@ body {
   color: #fff;
   border: none;
   font-size: 1em;
-  padding: 5px 11px 8px;
+  padding: 5px 11px 7px;
 }
 
 .bg-secondary {
@@ -371,6 +374,7 @@ input[type="checkbox"]:checked + label:before {
 .offer {
   display: block;
   padding: 80px 0;
+  font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .offer-block {
