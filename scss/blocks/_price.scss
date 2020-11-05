@@ -1,0 +1,32 @@
+.price {
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_card {
+      margin-bottom: 10px;
+    }
+  }
+  &-card {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+
+    &_text {
+      padding: 20px;
+      font-size: 15px;
+    }
+    &_title {
+      margin: 0;
+    }
+    &_cost {
+      @include bold;
+    }
+    &_pricetag {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    &_button {
+      text-align: center;
+    }
+  }
+}

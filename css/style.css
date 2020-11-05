@@ -676,4 +676,51 @@ input[type="checkbox"]:checked + label:before {
     margin-left: 20px;
   }
 }
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-block_card {
+  margin-bottom: 10px;
+}
+
+.price-card {
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.price-card_text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card_title {
+  margin: 0;
+}
+
+.price-card_cost {
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.price-card_pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.price-card_button {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
