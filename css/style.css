@@ -591,74 +591,89 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.catalog {
-  background-color: #f2f2f2;
-}
-
-.catalog-block {
+.blog_heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.blog_title {
+  font-size: 24px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.blog_link-more {
+  color: #507fe1;
+  font-size: 16px;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.catalog-card {
-  max-width: 570px;
-  position: relative;
+.blog-list_card {
   -webkit-box-shadow: 7px 7px 21px rgba(0, 0, 0, 0.2);
           box-shadow: 7px 7px 21px rgba(0, 0, 0, 0.2);
-  margin: 1em 0.4em;
+  margin-bottom: 20px;
 }
 
-.catalog-card_button {
+.blog-list_image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-list_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.catalog-card_teg {
-  position: absolute;
-  top: 9px;
-  left: 7px;
-  background-color: #507fe1;
-  padding: 8px 14px;
-  color: #ddd;
-  font-size: 1em;
-}
-
-.catalog-card_image {
-  display: block;
-}
-
-.catalog-link {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.catalog_link-more {
-  display: inline-block;
-}
-
-.catalog_description {
-  display: block;
-  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
 }
 
 @media (max-width: 1190px) {
-  .catalog-block {
+  .blog-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog-list_card {
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 760px) {
+  .blog-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .blog-list_card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .catalog-card {
-    max-width: 470px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
