@@ -4,13 +4,17 @@
 @import "grid";
 //настройка шрифтов и цвета
 @import "fonts";
+//блок цветов
 @import "colors/colors";
 //настройки интерфейса
 @import "interface";
 //шапка сайта
 @import "blocks/navbar";
+//блок hero
 @import "blocks/hero";
+//блок формы расчетов
 @import "blocks/offer";
+//блок преимущества
 @import "blocks/feature";
 //Наш каталог
 @import "blocks/catalog";

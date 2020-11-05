@@ -5,13 +5,25 @@
     flex-wrap: wrap;
   }
   &-card {
-    width: 570px;
-    flex-basis: 50%;
+    max-width: 570px;
+    //flex-basis: 50%;
     position: relative;
+    //border: 1px solid red;
+    margin: 1em 0.4em;
     &_button {
       position: absolute;
-      bottom: 0;
+      bottom: 4px;
       right: 0;
+    }
+    &_teg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $primary;
+      padding: 7px 12px;
+      margin-top: 10px;
+      margin-left: 7px;
+      color: #ddd;
     }
   }
 }
