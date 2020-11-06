@@ -56,3 +56,10 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .catalog {
+    &-link_more {
+      display: block;
+    }
+  }
+}

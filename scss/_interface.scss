@@ -28,10 +28,11 @@
   font-size: 1em;
   @include bold;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   color: $primary;
   text-decoration: none;
 }
+// кнопка для всех блоков
 .button {
   border: none;
   text-transform: uppercase;
@@ -47,7 +48,7 @@
   &:hover {
     cursor: pointer;
   }
-  //---------------- catalog ----------------
+  //----------------для блока catalog ----------------
   &-fitting {
     padding: 10px;
     background-color: #fff;
@@ -137,3 +138,4 @@ input[type="checkbox"] {
     }
   }
 }
+

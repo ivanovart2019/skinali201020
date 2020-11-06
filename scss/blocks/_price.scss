@@ -1,5 +1,5 @@
 .price {
-  background-color: #f0f0f0;
+  //background-color: #f0f0f0;
   &-block {
     display: flex;
     justify-content: space-between;
@@ -28,6 +28,7 @@
       justify-content: space-between;
       // margin-bottom: 24px;
     }
+    // блок кнопкиб, но не кнопка !
     &_button {
       z-index: -1;
       text-align: center;
@@ -35,17 +36,28 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
       background-color: #fff;
-      height: 80px;
+      height: 70px;
       padding: 10px;
-      //padding-top: 0;
+      padding-top: 0;
+      //border: 1px solid #ccc;
     }
+    // эффект на карту
     &:hover {
       .price-card_button {
         z-index: 999;
         bottom: -70px;
-        //border: 1px solid #ccc;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .price {
+    &-block {
+      justify-content: center;
+      &_card {
+        margin: 20px;
       }
     }
   }
