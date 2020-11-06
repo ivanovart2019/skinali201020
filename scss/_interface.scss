@@ -37,14 +37,16 @@
   text-transform: uppercase;
   //padding: 20px 40px;
   font-size: 0.8em;
-  padding: 1.2% 3%;
+  padding: 1.5em 3em;
   background-color: $primary;
   color: #fff;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 1px;
   text-decoration: none;
   //margin-top: 80px;
-
+  &:hover {
+    cursor: pointer;
+  }
   //---------------- catalog ----------------
   &-fitting {
     padding: 10px;
@@ -74,7 +76,6 @@
     padding: 7px 13px 5px;
   }
 }
-
 .bg-secondary {
   background: $bg-secondary;
 }

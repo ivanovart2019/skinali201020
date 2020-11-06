@@ -1,4 +1,5 @@
 .price {
+  background-color: #f0f0f0;
   &-block {
     display: flex;
     justify-content: space-between;
@@ -8,7 +9,9 @@
     }
   }
   &-card {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: #fff;
+    //box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 
     &_text {
       padding: 20px;
@@ -23,10 +26,27 @@
     &_pricetag {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 24px;
+      // margin-bottom: 24px;
     }
     &_button {
+      z-index: -1;
       text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      height: 80px;
+      padding: 10px;
+      //padding-top: 0;
+    }
+    &:hover {
+      .price-card_button {
+        z-index: 999;
+        bottom: -70px;
+        //border: 1px solid #ccc;
+      }
     }
   }
 }
