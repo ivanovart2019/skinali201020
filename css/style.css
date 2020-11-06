@@ -764,7 +764,7 @@ input[type="checkbox"]:checked + label:before {
   bottom: -70px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -848,5 +848,38 @@ input[type="checkbox"]:checked + label:before {
     margin: auto;
     margin: 20px auto 50px;
   }
+}
+
+.reviews {
+  background-color: #f5f3f5;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.reviews-slider_item {
+  text-align: center;
+}
+
+.reviews-slider_image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #6a996e;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.reviews-slider_text {
+  font-size: 15px;
+  font-style: italic;
+  max-width: 370px;
+  padding: 20px;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
