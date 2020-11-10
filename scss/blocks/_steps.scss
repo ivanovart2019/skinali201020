@@ -53,6 +53,15 @@
   }
 }
 
+@media (max-width: 720px){
+  .steps {
+    .step {
+      text-align: center;
+      flex-basis: 45%;
+}
+  }
+}
+
 @media (max-width: 520px) {
   .steps {
     .step {

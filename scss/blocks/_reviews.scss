@@ -3,6 +3,7 @@
   &-slider {
     display: flex;
     justify-content: space-around;
+    padding: 0 0 140px;
     &_item {
       text-align: center;
     }
@@ -23,8 +24,9 @@
       background-color: #ffffff;
       border-radius: 10px;
       margin-bottom: 20px;
-      &:after{
-        content: '';
+      &:after {
+        //рисуем треугольник
+        content: "";
         position: absolute;
         bottom: -65px;
         left: 45%;
@@ -32,6 +34,20 @@
         height: 30px;
         border: 20px solid transparent;
         border-top: 20px solid #99f;
+      }
+    }
+  }
+}
+@media (max-width: 680px) {
+  .reviews {
+    &-slider {
+      display: block;
+      flex-wrap: wrap;
+      &_text {
+        margin: auto;
+      }
+      &_item {
+        display: block;
       }
     }
   }
