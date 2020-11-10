@@ -391,8 +391,8 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 48px;
-  margin-top: -220px;
-  width: 88%;
+  margin-top: -100px;
+  width: 100%;
 }
 
 .offer-block_calc_bg {
@@ -404,6 +404,10 @@ input[type="checkbox"]:checked + label:before {
   background: #fff url(../img/fu-2.png) no-repeat right bottom;
   background-size: contain;
   margin: 30px auto;
+}
+
+.offer-block_price_bg {
+  width: 100%;
 }
 
 .offer_title {
@@ -676,8 +680,9 @@ input[type="checkbox"]:checked + label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -817,9 +822,9 @@ input[type="checkbox"]:checked + label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -899,8 +904,9 @@ input[type="checkbox"]:checked + label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 0 140px;
 }
 

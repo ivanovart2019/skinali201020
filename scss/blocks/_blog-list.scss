@@ -15,7 +15,7 @@
   }
   &-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     &_card {
       box-shadow: 7px 7px 21px rgba(0, 0, 0, 0.2);

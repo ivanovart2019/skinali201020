@@ -6,8 +6,8 @@
   &-block {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     padding: 48px;
-    margin-top: -220px;
-    width: 88%;
+    margin-top: -100px;
+    width: 100%;
     &_calc_bg {
       background: #fff url(../img/fu-1.png) no-repeat right bottom;
       background-size: contain;
@@ -16,6 +16,9 @@
       background: #fff url(../img/fu-2.png) no-repeat right bottom;
       background-size: contain;
       margin: 30px auto;
+    }
+    &_price_bg{
+      width: 100%;
     }
   }
   &_title {
