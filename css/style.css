@@ -390,11 +390,20 @@ input[type="checkbox"]:checked + label:before {
 .offer-block {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  background: #fff url(../img/fu-1.png) no-repeat right bottom;
   background-size: 41%;
   padding: 48px;
   margin-top: -200px;
   width: 90%;
+}
+
+.offer-block_calc_bg {
+  background: #fff url(../img/fu-1.png) no-repeat right bottom;
+}
+
+.offer-block_price_bg {
+  background: #fff url(../img/fu-2.png) no-repeat right bottom;
+  background-size: contain;
+  margin: 30px auto;
 }
 
 .offer_title {
@@ -408,6 +417,7 @@ input[type="checkbox"]:checked + label:before {
   display: block;
   font-size: 20px;
   margin-bottom: 40px;
+  max-width: 800px;
 }
 
 .offer .form_row {
@@ -418,7 +428,7 @@ input[type="checkbox"]:checked + label:before {
       -ms-flex-align: center;
           align-items: center;
   max-width: 900px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .offer .form_row:last-child {
@@ -448,6 +458,12 @@ input[type="checkbox"]:checked + label:before {
 .offer .form_button {
   height: 80px;
   width: 100%;
+}
+
+.offer .form_policy {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 16px;
 }
 
 @media (max-width: 1190px) {
@@ -872,14 +888,27 @@ input[type="checkbox"]:checked + label:before {
   height: 70px;
   border: 2px solid #6a996e;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .reviews-slider_text {
+  position: relative;
   font-size: 15px;
   font-style: italic;
   max-width: 370px;
   padding: 20px;
   background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.reviews-slider_text:after {
+  content: '';
+  position: absolute;
+  bottom: -65px;
+  left: 45%;
+  height: 30px;
+  border: 20px solid transparent;
+  border-top: 20px solid #99f;
 }
 /*# sourceMappingURL=style.css.map */
