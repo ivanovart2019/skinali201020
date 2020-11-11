@@ -1031,6 +1031,10 @@ input[type="checkbox"]:checked + label:before {
   text-align: center;
 }
 
+.contacts-img {
+  width: 100%;
+}
+
 @media (max-width: 640px) {
   .contacts_address {
     max-width: 170px;
