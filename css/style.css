@@ -968,13 +968,31 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .factory-block_text {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin-left: 70px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-left: 2em;
   font-size: 20px;
 }
 
-.factory-block_text p {
-  margin-top: 0;
+.factory-block_image {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .factory-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .factory-block_text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 2em 1em;
+  }
+  .factory-block_image {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,12 +2,43 @@
   &-block {
     display: flex;
     justify-content: space-between;
+    //flex-wrap: wrap;
     &_text {
-      flex-basis: 50%;
-      margin-left: 70px;
+      flex-basis: 60%;
+      margin-left: 2em;
       font-size: 20px;
-      p {
-        margin-top: 0;
+    }
+    &_image {
+      margin: 20px 0;
+    }
+  }
+}
+// @media (max-width: 1024px) {
+//   .factory {
+//     &-block {
+//       // justify-content: space-between;
+//       // flex-wrap: nowrap;
+//       &_text {
+//       //   flex-basis: 60%;
+//       //   margin-left: 1em;
+//        }
+//       &_image {
+//       }
+//     }
+//   }
+//   }
+
+@media (max-width: 768px) {
+  .factory {
+    &-block {
+      justify-content: center;
+      flex-wrap: wrap;
+      &_text {
+        flex-basis: 100%;
+        margin: 2em 1em;
+      }
+      &_image {
+        margin-top: 20px;
       }
     }
   }
