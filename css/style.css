@@ -995,4 +995,53 @@ input[type="checkbox"]:checked + label:before {
     margin-top: 20px;
   }
 }
+
+.contacts_link {
+  text-decoration: none;
+  color: #262626;
+}
+
+.contacts_image {
+  margin-bottom: 10px;
+}
+
+.contacts_text {
+  font-size: 16px;
+}
+
+.contacts_address {
+  font-style: normal;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contacts-block_item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .contacts_address {
+    max-width: 170px;
+    margin: auto;
+  }
+  .contacts-block {
+    display: block;
+  }
+  .contacts-block_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

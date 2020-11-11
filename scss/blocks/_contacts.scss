@@ -1,0 +1,45 @@
+.contacts {
+  &_link {
+    text-decoration: none;
+    color: $text-color;
+  }
+  &_image {
+    margin-bottom: 10px;
+  }
+  &_text {
+    font-size: 16px;
+  }
+  &_address {
+    font-style: normal;
+  }
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    &_item {
+      flex-basis: 33%;
+      text-align: center;
+    }
+    
+  }
+
+  &-img {
+  }
+}
+@media (max-width: 640px) {
+  .contacts {
+    &_address {
+      max-width: 170px;
+      margin: auto;
+    }
+    &-block {
+      display: block;
+      &_item {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+  }
+}
+}
