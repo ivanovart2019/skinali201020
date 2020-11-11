@@ -1,0 +1,14 @@
+.factory {
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    &_text {
+      flex-basis: 50%;
+      margin-left: 70px;
+      font-size: 20px;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}

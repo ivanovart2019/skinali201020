@@ -957,4 +957,24 @@ input[type="checkbox"]:checked + label:before {
     display: block;
   }
 }
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.factory-block_text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+.factory-block_text p {
+  margin-top: 0;
+}
 /*# sourceMappingURL=style.css.map */
