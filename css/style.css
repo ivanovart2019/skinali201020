@@ -1113,7 +1113,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .footer_copy {
-  color: #777;
+  color: #888;
 }
 
 .footer_pay-logo {
@@ -1137,5 +1137,28 @@ input[type="checkbox"]:checked + label:before {
 
 .footer-social_link {
   margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-pay_info {
+    margin-top: 30px;
+  }
+  .footer-contacts {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

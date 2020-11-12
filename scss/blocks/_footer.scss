@@ -27,7 +27,7 @@
     margin-bottom: 40px;
   }
   &_copy {
-    color: #777;
+    color: #888;
   }
   &_pay-logo {
     margin: 15px;
@@ -48,6 +48,24 @@
   &-social {
     &_link {
       margin-left: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+       
+    &-pay_info{
+      margin-top: 30px;
+    }
+    &-contacts{
+      text-align: center;
+      margin: 50px 0;
+    }
+    &-block {
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 0;
     }
   }
 }
