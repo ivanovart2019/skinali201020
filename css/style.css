@@ -1049,8 +1049,90 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.questions-block_title {
+.questions-block {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+.questions_title {
   font-size: 30px;
-  @incl;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.questions a {
+  font-size: 21px;
+  color: #507fe1;
+  opacity: 0.7;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer_title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.footer_subtitle {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.footer_copy {
+  color: #777;
+}
+
+.footer_pay-logo {
+  margin: 15px;
+}
+
+.footer-contacts {
+  text-align: right;
+}
+
+.footer_phone {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.footer_mail {
+  display: block;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

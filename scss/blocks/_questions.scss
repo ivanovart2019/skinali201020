@@ -1,12 +1,18 @@
 .questions {
   &-block {
+    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
-    &_title {
-      font-size: 30px;
-      @include bold;
-    }
+    margin: auto;
+  }
+  &_title {
+    font-size: 30px;
+    @include bold;
+  }
+  a{
+    font-size: 21px;
+    color: $primary;
+    opacity: 0.7;
   }
 }
