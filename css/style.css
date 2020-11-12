@@ -1126,13 +1126,16 @@ input[type="checkbox"]:checked + label:before {
 
 .footer_phone {
   display: block;
-  margin-bottom: 20px;
   font-size: 20px;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .footer_mail {
   display: block;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+.footer-social_link {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

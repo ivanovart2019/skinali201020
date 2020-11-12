@@ -37,12 +37,17 @@
   }
   &_phone {
     display: block;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     font-size: 20px;
     @include bold;
   }
   &_mail {
     display: block;
-    margin-bottom: 20px;
+    margin: 20px 0;
+  }
+  &-social {
+    &_link {
+      margin-left: 20px;
+    }
   }
 }
