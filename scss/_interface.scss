@@ -109,6 +109,27 @@ input[type="checkbox"] {
   }
 }
 
+// -кнопка "наверх"------------------------
+#page__up {
+  width: 100px;
+  background: #b9b1b4;
+  text-align: center;
+  padding: 8px;
+  position: fixed;
+  bottom: 20px;
+  right: 600px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-size: 19px;
+}
+#page__up:before {
+  content: "\2191";
+  display: block;
+  position: absolute;
+  top: 5px;
+}
+// ------------------------
 @media (max-width: 768px) {
   .checkbox {
     &-label {
@@ -138,4 +159,3 @@ input[type="checkbox"] {
     }
   }
 }
-

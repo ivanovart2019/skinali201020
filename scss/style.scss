@@ -6,6 +6,7 @@
 @import "fonts";
 //блок цветов
 @import "colors/colors";
+@import "slick";
 //настройки интерфейса
 @import "interface";
 //шапка сайта
@@ -22,8 +23,11 @@
 @import "blocks/blog-list";
 //блок цены
 @import "blocks/price";
+
 //блок steps
 @import "blocks/steps";
+
+@import "blocks/before";
 //блок отзывов
 @import "blocks/reviews";
 
