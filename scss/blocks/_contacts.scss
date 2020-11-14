@@ -22,7 +22,9 @@
       flex-basis: 33%;
       text-align: center;
     }
-    
+    a {
+      cursor: pointer;
+    }
   }
 
   &-img {
@@ -41,6 +43,6 @@
         width: 100%;
         margin-bottom: 30px;
       }
+    }
   }
-}
 }
