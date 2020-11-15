@@ -1,18 +1,32 @@
 .before {
   &-slider {
-    // &-wrap {
-    max-width: 640px;
-    margin: auto;
-    position: relative;
-
+    &-wrap {
+      max-width: 640px;
+      margin: auto;
+      position: relative;
+    }
     &-arrows {
       z-index: -1;
       display: flex;
       justify-content: space-between;
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translateY(-50%);
+      width: 100%;
+      transform: translateY(-100%);
+      .arrow {
+        background-color: transparent;
+        border: none;
+        opacity: 0.4;
+        &:focus {
+          outline: none;
+        }
+        &-left {
+          transform: translateX(-140%);
+        }
+        &-right {
+          transform: translateX(140%);
+        }
+      }
     }
     &_dots {
       margin: auto;
@@ -21,7 +35,7 @@
       align-items: center;
       list-style: none;
       padding: 0;
-      margin-top: 30px;
+      margin-top: 20px;
       li {
         width: 10px;
         height: 10px;
@@ -39,18 +53,5 @@
         display: none;
       }
     }
-  }
-}
-.arrow {
-  background-color: transparent;
-  border: none;
-  &:focus {
-    outline: none;
-  }
-  &-left {
-    transform: translateX(-200%);
-  }
-  &-right {
-    transform: translateX(200%);
   }
 }

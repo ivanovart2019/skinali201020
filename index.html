@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фабрика-скинали-290920</title>
     <link rel="stylesheet" href="css/normalise.css">
-    <!-- <script src="js/jquery_3.4.1..min.js"></script> -->
     <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"> -->
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -469,8 +469,10 @@
 </section>
 <!-- ----------------------------------------------------- -->
 <section class="section before">
-    <div class="container">
+  <div class="container">
         <h2 class="section-title section_title">До и после</h2>
+    <div class="before-slider-wrap">
+
         <div class="before-slider">
             
             <div class="before-slider_item">
@@ -488,22 +490,24 @@
             </div>
 
             <div class="before-slider_item">
-                <div class="before-after">
+                  <div class="before-after">
                     <img src="img/5_1.jpg" alt="1">
                     <img src="img/5_2.jpg" alt="2">
                   </div>
             </div>
         </div>
+      
 
         <div class="before-slider-arrows">
-            <button class="arrow-left">
-                <img src="img/left2.png" alt="L">
+            <button class="arrow arrow-left">
+                <img src="img/arrow-left.png" alt="L">
             </button>
-            <button class="arrow-right">
-                <img src="img/right2.png" alt="R">
+            <button class="arrow arrow-right">
+                <img src="img/arrow-right.png" alt="R">
             </button>
         </div>
-
+        
+    </div>
     </div>
 </section>
 <!-- ----------------------------------------------------- -->
@@ -699,18 +703,19 @@
 <div id="page__up"> наверх </div>   <!-- кнопка наверх -->>
 
 <!-- подключение виджета обратной связи через spikmi (соцсети)-->
-<!--<script type="text/javascript" src="https://spikmi.com/Widget?Id=4342"></script> -->
+<scrip type="text/javascript" src="https://spikmi.com/Widget?Id=4342"></scrip> 
 
- <!-- <script src="js/jquery_3.4.1..min.js" type="text/javascript"></script>  -->
+ 
+ <!-- <scrip src="js/jquery-2.2.4.min.js" type="text/javascript"></scrip>  -->
  <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous">
-</script> 
-<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script> -->
+  crossorigin="anonymous"></script>
+ 
+<script src="js/slick.min.js" type="text/javascript"></script> 
 <script src="js/jquery.event.move.js" type="text/javascript"></script>
 <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
-<script src="js/slick.min.js" type="text/javascript"></script>
+
 
 <script>
     $(window).load(function(){
@@ -718,7 +723,7 @@
             before_label: 'Без скинали', // Set a custom before label
             after_label: 'Со скинали' // Set a custom after label
          });
-//------------------           
+//------------- кнопки внизу -------------           
     $('.before-slider').slick({
         draggable: false,
         dots: true,
@@ -727,9 +732,9 @@
         nextArrow: $('.arrow-right')
     });
 });
-// --------------------
-    $('menu-button').on('click', function(){
-      $('.menu').toggleClass('menu_active');  
+// ----------- показать верхнее меню ---------
+    $('.menu-button').on('click', function(){
+      $('.menu').toggleClass('.menu_active');  
     });
 </script>
 

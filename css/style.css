@@ -1039,7 +1039,7 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.before-slider {
+.before-slider-wrap {
   max-width: 640px;
   margin: auto;
   position: relative;
@@ -1055,9 +1055,29 @@ input[type="checkbox"]:checked + label:before {
           justify-content: space-between;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.before-slider-arrows .arrow {
+  background-color: transparent;
+  border: none;
+  opacity: 0.4;
+}
+
+.before-slider-arrows .arrow:focus {
+  outline: none;
+}
+
+.before-slider-arrows .arrow-left {
+  -webkit-transform: translateX(-140%);
+          transform: translateX(-140%);
+}
+
+.before-slider-arrows .arrow-right {
+  -webkit-transform: translateX(140%);
+          transform: translateX(140%);
 }
 
 .before-slider_dots {
@@ -1073,7 +1093,7 @@ input[type="checkbox"]:checked + label:before {
           align-items: center;
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .before-slider_dots li {
@@ -1094,25 +1114,6 @@ input[type="checkbox"]:checked + label:before {
 
 .before-slider_dots button {
   display: none;
-}
-
-.arrow {
-  background-color: transparent;
-  border: none;
-}
-
-.arrow:focus {
-  outline: none;
-}
-
-.arrow-left {
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
-}
-
-.arrow-right {
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
 }
 
 .reviews {
