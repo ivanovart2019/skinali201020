@@ -303,7 +303,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 600px) {
-  .navbar_button {
+  .navbar__button {
     font-size: 0.7em;
     padding: 3% 5%;
   }
@@ -339,7 +339,7 @@ input[type="checkbox"]:checked + label:before {
           transform: translateY(-100%);
 }
 
-.menu_nav {
+.menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +350,7 @@ input[type="checkbox"]:checked + label:before {
       justify-content: space-around;
 }
 
-.menu_link {
+.menu__link {
   text-decoration: none;
   font-size: 17px;
   text-transform: uppercase;
@@ -387,7 +387,7 @@ input[type="checkbox"]:checked + label:before {
   outline: none;
 }
 
-.menu-button_line {
+.menu-button__line {
   display: block;
   width: 20px;
   height: 3px;
@@ -417,11 +417,11 @@ input[type="checkbox"]:checked + label:before {
   min-height: 80px;
 }
 
-.navbar_mobile, .navbar_landline {
+.navbar__mobile, .navbar__landline {
   text-align: right;
 }
 
-.navbar_phone {
+.navbar__phone {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
@@ -430,14 +430,14 @@ input[type="checkbox"]:checked + label:before {
   color: #262626;
 }
 
-.navbar .navbar_smail-text {
+.navbar .navbar__smail_text {
   display: block;
   font-size: 14px;
   color: #7b7b7b;
   text-decoration: none;
 }
 
-.navbar .logo_text {
+.navbar .logo__text {
   display: block;
   margin-bottom: 5px;
   font-size: 20px;
@@ -445,20 +445,20 @@ input[type="checkbox"]:checked + label:before {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
-.navbar .logo_description {
+.navbar .logo__description {
   display: block;
   font-size: 14px;
   color: #7b7b7b;
 }
 
 @media (max-width: 992px) {
-  .navbar_mobile, .navbar_landline {
+  .navbar__mobile, .navbar__landline {
     display: none;
   }
 }
 
 @media (max-width: 660px) {
-  .navbar_logo {
+  .navbar__logo {
     display: none;
   }
   .menu {
@@ -467,13 +467,13 @@ input[type="checkbox"]:checked + label:before {
   .menu-button {
     height: 60px;
   }
-  .menu_nav {
+  .menu__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .menu_link {
+  .menu__link {
     margin-bottom: 1em;
   }
 }
@@ -486,13 +486,13 @@ input[type="checkbox"]:checked + label:before {
   padding-bottom: 200px;
 }
 
-.hero_title {
+.hero__title {
   display: block;
   font-size: 1.5em;
   margin: 40px 0 40px 0;
 }
 
-.hero_subtitle {
+.hero__subtitle {
   display: block;
   font-size: 1.2em;
   font-family: "Proxima Nova Semibold", sans-serif;
@@ -500,11 +500,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 640px) {
-  .hero_title {
+  .hero__title {
     font-size: 1em;
     margin: 60px 0 40px 0;
   }
-  .hero_subtitle {
+  .hero__subtitle {
     display: block;
     font-size: 1em;
     font-family: "Proxima Nova Semibold", sans-serif;
@@ -1037,83 +1037,6 @@ input[type="checkbox"]:checked + label:before {
     margin: auto;
     margin: 20px auto 50px;
   }
-}
-
-.before-slider-wrap {
-  max-width: 640px;
-  margin: auto;
-  position: relative;
-}
-
-.before-slider-arrows {
-  z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.before-slider-arrows .arrow {
-  background-color: transparent;
-  border: none;
-  opacity: 0.4;
-}
-
-.before-slider-arrows .arrow:focus {
-  outline: none;
-}
-
-.before-slider-arrows .arrow-left {
-  -webkit-transform: translateX(-140%);
-          transform: translateX(-140%);
-}
-
-.before-slider-arrows .arrow-right {
-  -webkit-transform: translateX(140%);
-          transform: translateX(140%);
-}
-
-.before-slider_dots {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.before-slider_dots li {
-  width: 10px;
-  height: 10px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 5px;
-}
-
-.before-slider_dots li:hover {
-  cursor: pointer;
-}
-
-.before-slider_dots li_slick-active {
-  background-color: #5b7fda;
-}
-
-.before-slider_dots button {
-  display: none;
 }
 
 .reviews {

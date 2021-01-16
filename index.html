@@ -4,127 +4,83 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
     <title>Фабрика-скинали-290920</title>
+	
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen">
+	
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"> -->
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<!-- <link rel="stylesheet" href="css/slick2.css"> -->
+	<link rel="stylesheet" href="css/main_style.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick-theme2.css">
-
-    <!-- <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-        }
-    
-        * {
-          box-sizing: border-box;
-        }
-    
-        .slider {
-            width: 60%;
-            margin: 100px auto;
-        }
-    
-        .slick-slide {
-          margin: 0px 0px;
-        }
-    
-        .slick-slide img {
-          width: 100%;
-        }
-    
-        .slick-prev:before,
-        .slick-next:before {
-          color: #999;
-        }
-    
-    
-        .slick-slide {
-          transition: all ease-in-out .3s;
-          opacity: .5;
-        }
-        
-        .slick-active {
-          opacity: .3;
-        }
-    
-        .slick-current {
-          opacity: 1;
-        }
-        </style> -->
+    <link rel="stylesheet" href="css/main_slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main_slick.css">
 </head>
 
 <body>
 
 <header class="header">
+        <!-- активное меню шапки -->
         <div class="menu menu_active">
             <div class="container">
-                <nav class="menu_nav">
-                    <a href="#" class="menu_link">Главная</a>
-                    <a href="#" class="menu_link">Продукция</a>
-                    <a href="#" class="menu_link">Примеры работ</a>
-                    <a href="#" class="menu_link">Примерка изображений</a>
-                    <a href="#" class="menu_link">Стоимость дилерам</a>
-                    <a href="#" class="menu_link">О скинали</a>
+                <nav class="menu__nav">
+                    <a href="#" class="menu__link">Главная</a>
+                    <a href="#" class="menu__link">Продукция</a>
+                    <a href="#" class="menu__link">Примеры работ</a>
+                    <a href="#" class="menu__link">Примерка изображений</a>
+                    <a href="#" class="menu__link">Стоимость дилерам</a>
+                    <a href="#" class="menu__link">О скинали</a>
                 </nav>
             </div>
-            <!-- end container -->
-        </div>
-        <!-- navbar -->
-      <div class="navbar">
-        
+        </div>    <!-- end menu -->		   
+        <!-- navbar навигационная панель -->
+      <div class="navbar">        
         <div class="container">
             <div class="navbar-wrap">
-            <button class="menu-button navbar_menu-button">
-                <span class="menu-button_line"></span>
-                <span class="menu-button_line"></span>
-                <span class="menu-button_line"></span>
+			<!-- Кнопка гамбургер -->
+            <button class="menu-button navbar__menu-button">  
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
             </button>
 
-            <div class="logo navbar_logo">
-                <strong class="logo_text">Фабрика скинали N1</strong>
-                <span class="logo_description">ведущий производитель скинали<span>
+            <div class="logo navbar__logo">
+                <strong class="logo__text">Фабрика скинали N1</strong>
+                <span class="logo__description">ведущий производитель скинали<span>
             </div>
 
-            <div class="navbar_mobile">
-                <a class="navbar_phone" href="tel:+79277777889">+7-927-777-78-89</a>
-                <span class="navbar_work-time navbar_smail-text">без выходных 9-21 </span>
+            <div class="navbar__mobile">
+                <a class="navbar__phone" href="tel:+79277777889">+7-927-777-78-89</a>
+                <span class="navbar__work_time navbar__smail_text">без выходных 9-21 </span>
             </div>
 
-            <div class="navbar_landline">
-                <a class="navbar_phone" href="tel:+74491234567">+7-449-123-45-67</a>
-                <a href="mailto:info@mail.cu"class="navbar_smail-text">info@mail.cu</a>
+            <div class="navbar__landline">
+                <a class="navbar__phone" href="tel:+74491234567">+7-449-123-45-67</a>
+                <a href="mailto:info@mail.cu"class="navbar__smail_text">info@mail.cu</a>
             </div>
 
-            <button class="button-o navbar_button">Получить консультацию</button>
+            <button class="button-o navbar__button">Получить консультацию</button>
             
            </div>    <!-- end navbar_wrap-->
-
         </div>			
     </div>  <!-- end navbar-->
 
         <!-- hero -->
         <div class="hero">
            <div class="container">
-            <h1 class="hero_title">
+            <h1 class="hero__title">
                 Гарантия <br>минимальной цены <br>на скинали
             </h1>
-            <span class="hero_subtitle">от 3000 р/м<sup>2</sup></span>
-           
-           <button class="button hero_button"> Заказать скинали</button>
+            <span class="hero__subtitle">от 3000 р/м<sup>2</sup></span>
+            <button class="button hero__button"> Заказать скинали</button>
+           </div>
         </div>
-    </div>
-    <!-- </header> -->
 </header>
-<!-- end header -->
-
+<!------------------------------------ end header ------------------------------------------------>
 <!-- блок main -->
 <main>
    <section class="offer bg-secondary">
@@ -314,7 +270,6 @@
     </div>
 </section>
 <!-- --------------------------------------------------------- -->
-
 <section class="section blog">
         <div class="container">
             <div class="blog_heading">
@@ -475,7 +430,6 @@
    </div>
 </section>
 <!-- ----------------------------------------------------- -->
-
 <section class="section steps">
     <div class="container">
         <h2 class="section-title section_title">Этапы работ</h2>
@@ -515,50 +469,43 @@
    </div>   <!-- end container -->
 </section>
 <!-- ----------------------------------------------------- -->
-<section class="section before">
+<!-- <section class="section before">
   <div class="container">
         <h2 class="section-title section_title">До и после</h2>
+		
     <div class="before-slider-wrap">
-
-        <div class="before-slider">
-            
+        <div class="before-slider">            
             <div class="before-slider_item">
                 <div class="before-after">
                   <img src="img/ss1-1.jpg" alt="1">
                   <img src="img/ss1-2.jpg" alt="2">
                 </div>
             </div>
-
             <div class="before-slider_item">
                 <div class="before-after">
                     <img src="img/ss2-1.jpg" alt="1">
                     <img src="img/ss2-2.jpg" alt="2">
                   </div>
             </div>
-
             <div class="before-slider_item">
                   <div class="before-after">
                     <img src="img/ss3-1.jpg" alt="1">
                     <img src="img/ss3-2.jpg" alt="2">
                   </div>
             </div>
-
             <div class="before-slider_item">
                 <div class="before-after">
                   <img src="img/ss4-1.jpg" alt="1">
                   <img src="img/ss4-2.jpg" alt="2">
                 </div>
           </div>
-
           <div class="before-slider_item">
             <div class="before-after">
               <img src="img/ss5-1.jpg" alt="1">
               <img src="img/ss5-2.jpg" alt="2">
             </div>
       </div>
-        </div>
-      
-
+        </div>     
         <div class="before-slider-arrows">
             <button class="arrow arrow-left">
                 <img src="img/arrow-left.png" alt="L">
@@ -566,41 +513,48 @@
             <button class="arrow arrow-right">
                 <img src="img/arrow-right.png" alt="R">
             </button>
-        </div>
-        
+        </div>        
     </div>
+    </div>
+</section>  -->
+<!-- -------------------------------------------- -->
+<section class="section before">
+  <div class="container">
+        <h2 class="section-title section_title">До и после</h2>
+
+       <article class="vertical-center slider">
+	   
+            <div class="twentytwenty-container">
+              <img src="img/ss1-1.jpg">
+              <img src="img/ss1-2.jpg">
+            </div>
+			
+            <div class="twentytwenty-container">
+              <img src="img/ss2-1.jpg">
+              <img src="img/ss2-2.jpg">
+            </div>
+			
+            <div class="twentytwenty-container">
+              <img src="img/ss3-1.jpg">
+              <img src="img/ss3-2.jpg">
+            </div>	
+			
+			<div class="twentytwenty-container">
+              <img src="img/ss4-1.jpg">
+              <img src="img/ss4-2.jpg">
+            </div>	
+			
+			<div class="twentytwenty-container">
+              <img src="img/ss5-1.jpg">
+              <img src="img/ss5-2.jpg">
+            </div>	
+			
+        </article>   
+                  </div>
+            </div>    
     </div>
 </section>
 <!-- ----------------------------------------------------- -->
-
-<!-- <section class="vertical-center slider">
-    <div class="container">
-        <h2 class="section-title section_title">Примеры скинали для кухни</h2>
-    <div>
-      <img src="img/ss1-1.jpg">
-    </div>
-	
-    <div>
-      <img src="img/ss1-2.jpg">
-    </div>
-	
-	 <div>
-      <img src="img/ss2-1.jpg">
-    </div>
-	
-	 <div>
-      <img src="img/ss2-2.jpg">
-    </div>
-	
-    <div>
-      <img src="img/ss3-1.jpg">
-    </div>
-	
-	<div>
-      <img src="img/ss3-2.jpg">
-    </div>
-    </div>
-  </section> -->
 
 <section class="section reviews">
     <div class="container">
@@ -790,13 +744,11 @@
   </div>
 </footer>
 
-<div id="page__up"> наверх </div>   <!-- кнопка наверх -->>
+<div id="page__up"> наверх </div>   <!-- кнопка наверх -->
 
 <!-- подключение виджета обратной связи через spikmi (соцсети)-->
-<script type="text/javascript" src="https://spikmi.com/Widget?Id=4342"></script> 
-
- 
- <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script> 
+<script type="text/javascript" src="https://spikmi.com/Widget?Id=4342"></script>  
+<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script> 
  <!-- <script -->
   <!-- src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"> -->
  <!-- <script> -->
@@ -805,37 +757,29 @@
 <script src="js/jquery.event.move.js" type="text/javascript"></script>
 <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
 
+<script>
+// slick-slider
+    $(document).on('ready', function() {         
+      $(".vertical-center").slick({
+        dots: true,
+        arrows: true,
+        fade: true,		
+      });        
+    });
+</script>
+
+    <script>
+    $(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.9});
+    });
+    </script>
 
 <script>
-    $(window).load(function(){
-         $('.before-after').twentytwenty({
-            before_label: 'Без скинали', // Set a custom before label
-            after_label: 'Со скинали' // Set a custom after label
-         });
-//------------- кнопки внизу -------------           
-    $('.before-slider').slick({
-        draggable: false,
-        dots: true,
-        dotsClass: 'before-slider_dots',
-        prewArrow: $('.arrow-left'),
-        nextArrow: $('.arrow-right'),
-        fade: true,
-    });
-});
 // ----------- показать верхнее меню ---------
     $('.menu-button').on('click', function(){
       $('.menu').toggleClass('.menu_active');  
     });
 </script>
-
-<!-- <script>
-    $(document).on('ready', function() {
-           
-      $(".vertical-center").slick({
-        dots: true,       
-      });        
-    });
-</script> -->
 
 <!-- ------------------"кнопка наверх" ---------------------->
 <script>

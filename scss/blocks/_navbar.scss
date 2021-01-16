@@ -12,13 +12,13 @@
     transform: translateY(-100%);
   }
 
-  &_nav {
+  &__nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
 
-  &_link {
+  &__link {
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
@@ -42,7 +42,7 @@
       outline: none;
     }
 
-    &_line {
+    &__line {
       display: block;
       width: 20px;
       height: 3px;
@@ -67,11 +67,11 @@
     //border: 1px solid red;
   }
 
-  &_mobile,
-  &_landline {
+  &__mobile,
+  &__landline {
     text-align: right;
   }
-  &_phone {
+  &__phone {
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
@@ -79,7 +79,7 @@
     text-decoration: none;
     color: $text-color;
   }
-  .navbar_smail-text {
+  .navbar__smail_text {
     display: block;
     font-size: 14px;
     color: $text-color-light;
@@ -87,14 +87,14 @@
   }
 
   .logo {
-    &_text {
+    &__text {
       display: block;
       margin-bottom: 5px;
       font-size: 20px;
       text-transform: uppercase;
       @include bold;
     }
-    &_description {
+    &__description {
       display: block;
       font-size: 14px;
       color: $text-color-light;
@@ -105,15 +105,15 @@
 // adaptive
 @media (max-width: 992px) {
   .navbar {
-    &_mobile,
-    &_landline {
+    &__mobile,
+    &__landline {
       display: none;
     }
   }
 }
 @media (max-width: 660px) {
   .navbar {
-    &_logo {
+    &__logo {
       display: none;
     }
   }
@@ -123,10 +123,10 @@
     &-button {
       height: 60px;
     }
-    &_nav {
+    &__nav {
       flex-direction: column;
     }
-    &_link {
+    &__link {
       margin-bottom: 1em;
     }
   }

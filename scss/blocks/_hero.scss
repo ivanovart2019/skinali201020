@@ -6,12 +6,12 @@
   padding-top: 120px;
   padding-bottom: 200px;
 
-  &_title {
+  &__title {
     display: block;
     font-size: 1.5em;
     margin: 40px 0 40px 0;
   }
-  &_subtitle {
+  &__subtitle {
     display: block;
     font-size: 1.2em;
     @include bold;
@@ -28,11 +28,11 @@
 
 @media (max-width: 640px) {
   .hero {
-    &_title {
+    &__title {
       font-size: 1em;
       margin: 60px 0 40px 0;
     }
-    &_subtitle {
+    &__subtitle {
       display: block;
       font-size: 1em;
       @include bold;
