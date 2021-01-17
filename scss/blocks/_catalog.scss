@@ -5,7 +5,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  &-card {
+  &__card {
     max-width: 570px;
     //flex-basis: 50%;
     position: relative;
@@ -14,12 +14,12 @@
     overflow: hidden;
     margin: 1em 0.4em;
     &:hover {
-      .catalog-card_button {
+      .catalog__card__button {
         transform: translateY(0);
         opacity: 1;
       }
     }
-    &_button {
+    &__button {
       display: flex;
       position: absolute;
       bottom: 0;
@@ -28,7 +28,7 @@
       opacity: 0;
       transform: translateY(100%);
     }
-    &_teg {
+    &__teg {
       position: absolute;
       top: 9px;
       left: 7px;
@@ -38,19 +38,19 @@
       color: #ddd;
       font-size: 1em;
     }
-    &_image {
+    &__image {
       display: block;
     }
   }
 
-  &-link {
+  &__link {
     text-align: center;
     margin-top: 50px;
   }
-  &_link-more {
+  &__link_more {
     display: inline-block;
   }
-  &_description {
+  &__description {
     display: block;
     margin-top: 2rem;
   }
@@ -61,14 +61,14 @@
     &-block {
       justify-content: center;
     }
-    &-card {
+    &__card {
       max-width: 470px;
     }
   }
 }
 @media (max-width: 480px) {
   .catalog {
-    &-link_more {
+    &__link_more {
       display: block;
     }
   }

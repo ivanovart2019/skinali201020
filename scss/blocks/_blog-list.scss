@@ -1,15 +1,15 @@
 .blog {
-  &_heading {
+  &__heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
   }
-  &_title {
+  &__title {
     font-size: 24px;
     @include bold;
   }
-  &_link-more {
+  &__link_more {
     color: $primary;
     font-size: 16px;
   }
@@ -17,16 +17,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    &_card {
+    &__card {
       box-shadow: 7px 7px 21px rgba(0, 0, 0, 0.2);
       margin-bottom: 20px;
     }
 
-    &_image {
+    &__image {
       height: 200px;
       overflow: hidden;
     }
-    &_text {
+    &__text {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,7 +39,7 @@
   .blog {
     &-list {
       justify-content: space-between;
-      &_card {
+      &__card {
         margin-right: 20px;
         margin-left: 20px;
         justify-content: space-between;
@@ -50,9 +50,8 @@
 @media (max-width: 760px) {
   .blog {
     &-list {
-      
       justify-content: space-around;
-      &_card {
+      &__card {
         justify-content: center;
         margin-right: 20px;
         margin-left: 20px;

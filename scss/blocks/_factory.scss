@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     //flex-wrap: wrap;
-    &_text {
+    &__text {
       flex-basis: 60%;
       margin-left: 2em;
       font-size: 20px;
     }
-    &_image {
+    &__image {
       margin: 20px 0;
     }
   }
@@ -33,11 +33,11 @@
     &-block {
       justify-content: center;
       flex-wrap: wrap;
-      &_text {
+      &__text {
         flex-basis: 100%;
         margin: 2em 1em;
       }
-      &_image {
+      &__image {
         margin-top: 20px;
       }
     }

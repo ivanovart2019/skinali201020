@@ -16,17 +16,17 @@
     flex-wrap: wrap;
     //padding: 1em;
   }
-  &_title {
+  &__title {
     margin-bottom: 8px;
     font-size: 18px;
     text-transform: uppercase;
     @include bold;
   }
-  &_subtitle {
+  &__subtitle {
     display: block;
     margin-bottom: 40px;
   }
-  &_copy {
+  &__copy {
     color: #888;
   }
   &_pay-logo {
@@ -35,18 +35,21 @@
   &-contacts {
     text-align: right;
   }
-  &_phone {
+  &__phone {
     display: block;
     //margin-bottom: 20px;
     font-size: 20px;
     @include bold;
   }
-  &_mail {
+  &__mail {
     display: block;
     margin: 20px 0;
   }
   &-social {
-    &_link {
+    margin-right: 70px;
+  }
+  &-social {
+    &__link {
       margin-left: 20px;
     }
   }
@@ -54,11 +57,11 @@
 @media (max-width: 768px) {
   .footer {
     text-align: center;
-       
-    &-pay_info{
+
+    &-pay__info {
       margin-top: 30px;
     }
-    &-contacts{
+    &-contacts {
       text-align: center;
       margin: 50px 0;
     }

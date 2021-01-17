@@ -9,7 +9,7 @@
   }
   .step {
     position: relative;
-    &_title {
+    &__title {
       margin-top: 10px;
       font-size: 18px;
     }
@@ -29,7 +29,7 @@
       top: 25%;
       right: -63%;
     }
-    &_text {
+    &__text {
       max-width: 170px;
       //margin: auto;
     }
@@ -44,7 +44,7 @@
       &:before {
         display: none;
       }
-      &_text {
+      &__text {
         max-width: 200px;
         //margin: auto;
         margin: 20px auto 30px;
@@ -53,12 +53,12 @@
   }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .steps {
     .step {
       text-align: center;
       flex-basis: 45%;
-}
+    }
   }
 }
 
@@ -70,7 +70,7 @@
       &:before {
         display: none;
       }
-      &_text {
+      &__text {
         max-width: 200px;
         margin: auto;
         margin: 20px auto 50px;
