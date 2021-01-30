@@ -1,21 +1,25 @@
-﻿.menu {
+﻿//-------------------- Кнопка выбора меню -------------
+.menu {
   position: fixed;
-  z-index: -1;
-  top: 80px;
+  z-index: 1;
+  top: 28px;
   left: 0;
   width: 100%;
   padding: 16px 0;
   background-color: $primary;
   transition: 0.2s;
-  transform: translateY(100%);
+  transform: translateY(-100%);
   &_active {
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
 
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    a:hover {
+      color: #a6ec36;
+    }
   }
 
   &__link {
@@ -23,6 +27,7 @@
     font-size: 17px;
     text-transform: uppercase;
     color: #ffffff;
+    @include bold;
   }
   &-button {
     display: flex;
@@ -31,8 +36,8 @@
     justify-content: center;
     background-color: transparent;
     border: none;
-    border-right: 1px solid rgba(#510bba, 0.2);
-    border-left: 1px solid rgba(#510bba, 0.2);
+    border-right: 1px solid rgba(#510bba, 0.2); /* линия справа от гамбургера */
+    border-left: 1px solid rgba(#510bba, 0.2); /* линия слева от гамбургера */
     height: 70px;
     width: 70px;
     &:hover {
@@ -42,16 +47,18 @@
       outline: none;
     }
 
+    /* линия гамбургера */
     &__line {
       display: block;
-      width: 20px;
-      height: 3px;
-      background-color: #89a9ff;
+      width: 30px;
+      height: 5px;
+      background-color: #559;
       margin: 3px 0;
     }
   }
 }
 
+/* --------------------- блок navbar --------------------- */
 .navbar {
   position: fixed;
   z-index: 99;
@@ -102,7 +109,7 @@
   }
 }
 
-// adaptive
+/*----------- adaptive меню ---------------*/
 @media (max-width: 992px) {
   .navbar {
     &__mobile,
@@ -119,7 +126,7 @@
   }
   .menu {
     top: 60px;
-    //transform: translateY(0);
+    transform: translateY(0);
     &-button {
       height: 60px;
     }
