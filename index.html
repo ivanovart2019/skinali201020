@@ -23,17 +23,17 @@
 
 <body>
 
-<header class="header">
+<header class="header" id="home">
         <!--------------------- активное меню шапки --------------------->
         <div class="menu menu_active">
             <div class="container">
-                <nav class="menu__nav">
-                    <a href="#" class="menu__link">Главная</a>
-                    <a href="#" class="menu__link">Продукция</a>
-                    <a href="#" class="menu__link">Примеры работ</a>
-                    <a href="#" class="menu__link">Примерка изображений</a>
-                    <a href="#" class="menu__link">Стоимость дилерам</a>
-                    <a href="#" class="menu__link">О скинали</a>
+                <nav class="menu__nav" id="menu__nav">
+                    <a href="#home" class="menu__link">Главная</a>
+                    <a href="#catalog" class="menu__link">КАТАЛОГ СКИНАЛИ</a>
+                    <a href="#price" class="menu__link">Виды скинали</a>
+                    <a href="#steps" class="menu__link">Этапы работ</a>
+                    <a href="#before" class="menu__link">До и после</a>
+                    <a href="#contacts" class="menu__link">Контакты</a>
                 </nav>
             </div>
         </div>  
@@ -177,7 +177,7 @@
        </div>
 </section>
 <!-- -----------------------------------------  -->
-<section class="section catalog">
+<section class="section catalog" id="catalog">
     <div class="container">
         <h2 class="section-title section_title">Каталог скинали</h2>
 
@@ -309,7 +309,7 @@
         </div>  
 </section>
 <!-- ---------------------------------------------------------- -->
-<section class="section price">
+<section class="section price" id="price">
    <div class="container">
        <h2 class="section-title section_title">Цены и виды скинали</h2>
      <div class="price-block ">
@@ -432,7 +432,7 @@
    </div>
 </section>
 <!-- ----------------------------------------------------- -->
-<section class="section steps">
+<section class="section steps" id="steps">
     <div class="container">
         <h2 class="section-title section_title">Этапы работ</h2>
       <div class="steps-block">
@@ -520,7 +520,7 @@
     </div>
 </section>  -->
 <!-- -------------------------------------------- -->
-<section class="section before">
+<section class="section before" id="before">
   <div class="container">
         <h2 class="section-title section_title">До и после</h2>
 
@@ -660,7 +660,7 @@
 </section>
 <!-- ----------------------------------------------------- -->
 
-<section class="section contacts">
+<section class="section contacts" id="contacts">
     <div class="container">
     <h2 class="section-title section_title">Контакты</h2>
     <div class="contacts-block">
@@ -776,12 +776,17 @@
     });
     </script>
 
+ <!-- ----------- Показать/Скрыть верхнее меню --------- -->
 <script>
-// ----------- показать верхнее меню ---------
-    $('.menu-button').on('click', function(){
-      $('.menu').toggleClass('.menu_active');  
-    });
-</script>
+        $('.menu-button').click( function(){
+          //$('.menu').toggleClass('.menu_active'); 
+          $('.menu').toggleClass('menu_active'); 
+        });
+    
+        $('.menu a').click(function(){
+            $('.menu').removeClass('.menu_active');
+        });
+    </script>
 
 <!-- ------------------"кнопка наверх" ---------------------->
 <script>

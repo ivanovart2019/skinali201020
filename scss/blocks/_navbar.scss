@@ -7,10 +7,11 @@
   width: 100%;
   padding: 16px 0;
   background-color: $primary;
-  transition: 0.2s;
-  transform: translateY(-100%);
+  transition: 0.3s;
+  transform: translateY(100%);
+
   &_active {
-    transform: translateY(100%);
+    transform: translateY(-100%);
   }
 
   &__nav {
@@ -29,6 +30,7 @@
     color: #ffffff;
     @include bold;
   }
+  /*  блок кнопки вывода меню */
   &-button {
     display: flex;
     flex-direction: column;
@@ -125,8 +127,11 @@
     }
   }
   .menu {
-    top: 60px;
+    top: 75px;
     transform: translateY(0);
+    &_active {
+      transform: translateY(-100%);
+    }
     &-button {
       height: 60px;
     }

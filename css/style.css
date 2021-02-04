@@ -329,15 +329,16 @@ input[type="checkbox"]:checked + label:before {
   width: 100%;
   padding: 16px 0;
   background-color: #507fe1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  /*  блок кнопки вывода меню */
 }
 
 .menu_active {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .menu__nav {
@@ -473,9 +474,13 @@ input[type="checkbox"]:checked + label:before {
     display: none;
   }
   .menu {
-    top: 60px;
+    top: 75px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  .menu_active {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   .menu-button {
     height: 60px;
