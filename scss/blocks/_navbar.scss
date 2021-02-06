@@ -1,4 +1,4 @@
-﻿//-------------------- Кнопка выбора меню -------------
+﻿//-------------------- Кнопка вывода меню -------------
 .menu {
   position: fixed;
   z-index: 1;
@@ -50,14 +50,38 @@
     }
 
     /* линия гамбургера */
-    &__line {
+
+    // &__line {
+    //   display: block;
+    //   width: 30px;
+    //   height: 5px;
+    //   background-color: #559;
+    //   margin: 3px 0;
+    // }
+
+    span {
+      /* настройка кнопки (полоски) */
       display: block;
+      //z-index: 200;
+      transition: all 0.3s;
       width: 30px;
+      margin-top: 6px;
       height: 5px;
       background-color: #559;
-      margin: 3px 0;
     }
   }
+}
+
+.first {
+  transform: translate(8px, 2px) rotate(45deg);
+  transform-origin: top left;
+}
+.middle {
+  transform: scale(0);
+}
+.last {
+  transform: translate(-3px, -21px) rotate(-45deg);
+  transform-origin: right bottom;
 }
 
 /* --------------------- блок navbar --------------------- */

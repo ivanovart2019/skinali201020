@@ -43,10 +43,21 @@
         <div class="container">
             <div class="navbar-wrap">
         <!------------------------ Кнопка гамбургер ------------------>
+            <!-- <button class="menu-button navbar__menu-button">  
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+            </button> -->
+
+            <!-- <button class="menu-button navbar__menu-button">  
+                <span class="first"></span>
+                <span class="middle"></span>
+                <span class="last"></span>
+            </button> -->
             <button class="menu-button navbar__menu-button">  
-                <span class="menu-button__line"></span>
-                <span class="menu-button__line"></span>
-                <span class="menu-button__line"></span>
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
             </button>
         <!-- ---------------------------------------------------- -->
 
@@ -779,14 +790,21 @@
  <!-- ----------- Показать/Скрыть верхнее меню --------- -->
 <script>
         $('.menu-button').click( function(){
-          //$('.menu').toggleClass('.menu_active'); 
-          $('.menu').toggleClass('menu_active'); 
+            $('span:nth-child(1)').toggleClass('first');
+	        $('span:nth-child(2)').toggleClass('middle');
+	        $('span:nth-child(3)').toggleClass('last');
+          $('.menu').toggleClass('menu_active');         
         });
     
         $('.menu a').click(function(){
+            $('span:nth-child(1)').toggleClass('first');
+	        $('span:nth-child(2)').toggleClass('middle');
+	        $('span:nth-child(3)').toggleClass('last');
             $('.menu').removeClass('.menu_active');
+            $('.menu').toggleClass('menu_active');
         });
     </script>
+
 
 <!-- ------------------"кнопка наверх" ---------------------->
 <script>
