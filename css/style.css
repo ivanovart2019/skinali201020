@@ -386,7 +386,7 @@ input[type="checkbox"]:checked + label:before {
   /* линия слева от гамбургера */
   height: 70px;
   width: 70px;
-  /* линия гамбургера */
+  /* линии гамбургера */
 }
 
 .menu-button:hover {
