@@ -290,7 +290,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 #page__up:before {
-  content: "\2191";
+  content: "\276f";
   display: block;
   position: absolute;
   top: 5px;
